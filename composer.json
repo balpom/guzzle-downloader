@@ -1,0 +1,25 @@
+{
+    "name": "balpom/guzzle-downloader",
+    "description": "Downloads the contents of the specified URI (or file).",
+    "type": "library",
+    "homepage": "https://www.balpom.ru",
+    "license": "MIT",
+    "keywords": ["guzzle", "wrapper", "facade", "https", "http", "url", "uri", "file", "web", "site", "content", "download", "downloader", "universal", "client", "http-client", "https-client", "PSR18", "PSR-18"],
+    "autoload": {
+        "psr-4": {
+            "Balpom\\GuzzleDownloader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mikhail (Balpom)"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "psr/http-message": "^2.0",
+        "balpom/universal-downloader": "^1.3",
+        "guzzlehttp/psr7": "^2.6",
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
