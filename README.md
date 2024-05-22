@@ -1,7 +1,7 @@
 # guzzle-downloader
 ## Simple realisation of Balpom\UniversalDownloader\PSR18DownloadInterface based on Guzzle PHP HTTP client.
 
-This downloader is a simple realisation of PSR18DownloadInterface from [balpom/universal-downloader](https://github.com/balpom/universal-downloader),  based on Guzzle PHP HTTP client ( [guzzle/guzzle](https://github.com/guzzle/guzzle); see more information on [https://guzzlephp.org](https://guzzlephp.org/) ).
+This downloader is a simple realisation of PSR18DownloadInterface from [balpom/universal-downloader](https://github.com/balpom/universal-downloader),  based on Guzzle PHP HTTP client ([guzzle/guzzle](https://github.com/guzzle/guzzle); see more information on [https://guzzlephp.org](https://guzzlephp.org/)).
 
 ### Requirements 
 - **PHP >= 8.1**
