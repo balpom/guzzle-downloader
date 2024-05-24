@@ -26,20 +26,25 @@ class Downloader implements PSR18DownloadInterface
         if (null === $client) {
             $client = new Client();
         }
-        $this->client = $client;
+        $this->setClient($client);
         $factory = new HttpFactory();
-        $factories = new Psr17Factories($factory, $factory, $factory);
+        $factories = new Psr17Factories($factory, $factory, $factory, $factory);
         $this->downloader = new PSR18Downloader($client, $factories);
+    }
+
+    public function setClient(Client $client): void
+    {
+        $this->client = $client;
+    }
+
+    public function getClient(): Client
+    {
+        return $this->client;
     }
 
     protected function downloader(): PSR18Downloader
     {
         return $this->downloader;
-    }
-
-    protected function client(): Client
-    {
-        return $this->client;
     }
 
     public function attempts(int $attempts): DownloadInterface
